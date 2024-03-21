@@ -1,30 +1,21 @@
-Roboto Flex Variable Font
-=========================
+Caveat Variable Font
+====================
 
-This download contains Roboto Flex as both a variable font and a static font.
+This download contains Caveat as both a variable font and static fonts.
 
-Roboto Flex is a variable font with these axes:
-  GRAD
-  XOPQ
-  XTRA
-  YOPQ
-  YTAS
-  YTDE
-  YTFI
-  YTLC
-  YTUC
-  opsz
-  slnt
-  wdth
+Caveat is a variable font with this axis:
   wght
 
 This means all the styles are contained in a single file:
-  RobotoFlex-VariableFont_GRAD,XOPQ,XTRA,YOPQ,YTAS,YTDE,YTFI,YTLC,YTUC,opsz,slnt,wdth,wght.ttf
+  Caveat/Caveat-VariableFont_wght.ttf
 
 If your app fully supports variable fonts, you can now pick intermediate styles
 that aren’t available as static fonts. Not all apps support variable fonts, and
-in those cases you can use the static font file for Roboto Flex:
-  static/RobotoFlex-Regular.ttf
+in those cases you can use the static font files for Caveat:
+  Caveat/static/Caveat-Regular.ttf
+  Caveat/static/Caveat-Medium.ttf
+  Caveat/static/Caveat-SemiBold.ttf
+  Caveat/static/Caveat-Bold.ttf
 
 Get started
 -----------
