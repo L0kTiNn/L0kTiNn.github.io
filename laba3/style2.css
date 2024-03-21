@@ -1,0 +1,32 @@
+@font-face {
+	font-family: 'Roboto'; 
+	src: local('Roboto'),
+		url(/shrift/RobotoFlex-VariableFont_GRAD\,XOPQ\,XTRA\,YOPQ\,YTAS\,YTDE\,YTFI\,YTLC\,YTUC\,opsz\,slnt\,wdth\,wght.ttf); 
+}
+@font-face {
+	font-family: 'Caveat '; 
+	src: local('Caveat'),
+		url(/shrift/Caveat-VariableFont_wght.ttf); 
+}
+h1, h2, h3{
+    font-family: "Roboto";
+}
+strong{
+    font-family: "Caveat";
+}
+body{
+    background: #ed836e;
+    background: -webkit-radial-gradient(circle farthest-side at center center, #ed836e 0%, #e32f21 100%);
+    background: -moz-radial-gradient(circle farthest-side at center center, #ed836e 0%, #e32f21 100%);
+    background: radial-gradient(circle farthest-side at center center, #ed836e 0%, #e32f21 100%);
+    }
+em{
+    border-bottom: 3px double; 
+}
+h1, h2, p{
+    margin: 5%; 
+}
+em{
+    padding-left: 3px;
+}
+       
