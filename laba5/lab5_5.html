@@ -1,37 +1,58 @@
 <!doctype html>
-<html lang="ru">
+<html>
+
 <head>
-<meta charset="utf-8">
-<title>Использование float при построении колонок</title>
-<style>
-#left{
-    
-	background:#ccf;
-	width:200px;
-	float: left;
-    box-sizing: border-box;
-    
-}
-#right{
-    
-	background:#fcc;
-	width:200px;
-	float:right;
-    box-sizing: border-box;
-    
-}
-#center{
-    
-    display: grid;
-	background:#cfc;
-    margin-left: 210px;
-    margin-right: 210px;
-}
-</style>
+    <meta charset="utf-8">
+    <title>Использование float при построении колонок</title>
+    <style type="text/css">
+        #left {
+            box-sizing: border-box;
+            background: #ccf;
+            width: 150px;
+            grid-area: 1/2/2/1;
+        }
+
+        #right {
+            box-sizing: border-box;
+            width: 200px;
+            background: #fcc;
+            grid-area: 3/3/3/3;
+        }
+
+        #center {
+            box-sizing: border-box;
+            background: #cfc;
+            height: 200px;
+            grid-area: 2/2/2/2
+        }
+        .container {
+            display: grid;
+            grid-template-columns: 20% 33% 33%;
+            grid-template-rows: 20% 33% 33%;
+        }
+    </style>
 </head>
+
 <body>
-	<div id="left">left<br>left<br>left<br>left<br>left</div>
-	<div id="right">right<br>right<br>right<br>right</div>
-	<div id="center">center text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text</div>
-</body>
+    <div class="container">
+    <div id="left">left<br>left<br>left<br>left<br>left</div>
+    <div id="right">right<br>right<br>right<br>right</div>
+    <div id="center">center text text text text text text text text text text text text text text text text text text
+        text text text text text text text text text text text text text text text text text text text text text text
+        text text text text text text text text text text text text text text text text text text text text text text
+        text text text text text text text text text text text text text text text text text text text text text text
+        text text text text text text text text text text text text text text text text text text text text text text
+        text text text text text text text text text text text text text text text text text text text text text text
+        text text text text text text text text text text text text text text text text text text text text text text
+        text text text text text text text text text text text text text text text text text text text text text text
+        text text text text text text text text text text text text text text text text text text text text text text
+        text text text text text text text text text text text text text text text text text text text text text text
+        text text text text text text text text text text text text text text text text text text text text text text
+        text text text text text text text text text text text text text text text text text text text text text text
+        text text text text text text text text text text text text text text text text text text text text text text
+        text text text text text text text text text text text text text text text</div>
+    </div>
+
+    </body>
+
 </html>
