@@ -3,56 +3,65 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Использование float при построении колонок</title>
+    <title>Использование grid при построении колонок</title>
     <style type="text/css">
-        #left {
+        body {
+            display: grid;
+            grid-template-columns: 200px 1fr 200px;
+            gap: 10px;
+        }
+
+        #left,
+        #right,
+        #center {
             box-sizing: border-box;
-			grid-area: 1/2/2/1;
+            padding: 10px;
+        }
+
+        #left {
             background: #ccf;
-            width: 150px;
         }
 
         #right {
-			background: #fcc;
-            box-sizing: border-box;
-			grid-area: 3/3/3/3;
-            width: 200px;  
+            background: #fcc;
         }
 
         #center {
-            box-sizing: border-box;
             background: #cfc;
-            height: 200px;
-			grid-area: 2/2/2/2
-        }
-        .container {
-            display: grid;
-            grid-template-columns: 20% 33% 33%;
-            grid-template-rows: 20% 33% 33%;
         }
     </style>
 </head>
 
 <body>
-    <div class="container">
     <div id="left">left<br>left<br>left<br>left<br>left</div>
-    <div id="right">right<br>right<br>right<br>right</div>
-    <div id="center">center text text text text text text text text text text text text text text text text text text
-        text text text text text text text text text text text text text text text text text text text text text text
-        text text text text text text text text text text text text text text text text text text text text text text
-        text text text text text text text text text text text text text text text text text text text text text text
-        text text text text text text text text text text text text text text text text text text text text text text
-        text text text text text text text text text text text text text text text text text text text text text text
-        text text text text text text text text text text text text text text text text text text text text text text
-        text text text text text text text text text text text text text text text text text text text text text text
-        text text text text text text text text text text text text text text text text text text text text text text
-        text text text text text text text text text text text text text text text text text text text text text text
-        text text text text text text text text text text text text text text text text text text text text text text
-        text text text text text text text text text text text text text text text text text text text text text text
-        text text text text text text text text text text text text text text text text text text text text text text
+    <div id="center">center text text text text text text text text text text text text text text text text text
+        text
+        text text text text text text text text text text text text text text text text text text text text text
+        text
+        text text text text text text text text text text text text text text text text text text text text text
+        text
+        text text text text text text text text text text text text text text text text text text text text text
+        text
+        text text text text text text text text text text text text text text text text text text text text text
+        text
+        text text text text text text text text text text text text text text text text text text text text text
+        text
+        text text text text text text text text text text text text text text text text text text text text text
+        text
+        text text text text text text text text text text text text text text text text text text text text text
+        text
+        text text text text text text text text text text text text text text text text text text text text text
+        text
+        text text text text text text text text text text text text text text text text text text text text text
+        text
+        text text text text text text text text text text text text text text text text text text text text text
+        text
+        text text text text text text text text text text text text text text text text text text text text text
+        text
+        text text text text text text text text text text text text text text text text text text text text text
+        text
         text text text text text text text text text text text text text text text</div>
-    </div>
-
-    </body>
-
+</div>
+<div id="right">right<br>right<br>right<br>right</div>
+</body>
 </html>
