@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        'use strict'
+        let num = prompt("Сколько ворон? ")
+        num = parseInt(num)
+        let lastOne = num%10
+        let lastTwo = num%100
+        if (num >= 0){
+            if (lastOne === 0 || lastOne >= 5 || (lastTwo>=11 && lastTwo<=14)) alert(`${num} ворон`)
+            else if (lastOne===1) alert(`${num} ворона`)
+            else alert(`${num} вороны`)
+        }
+        else alert(`Nah`)
+    </script>
+</body>
+</html>
