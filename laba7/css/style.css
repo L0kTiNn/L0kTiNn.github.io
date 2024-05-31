@@ -202,3 +202,9 @@ background-position: -1px -87px;
 .social li a i.linkedin {
 background-position: -36px -85px;
 }
+#clearfix:after {
+  content: " ";
+  clear: both;
+  display: table;
+}
+
