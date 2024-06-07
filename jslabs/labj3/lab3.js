@@ -1,7 +1,7 @@
-import { fib } from "../labj3/lab3_1";
+import { fib } from "./lab3_1.js";
 
 /**
- * counts decrimal part of number
+ * Считаем десятичную часть числа 
  * @param {number} num 
  * @returns {number}
  */
@@ -11,8 +11,8 @@ export function getDecimal(num){
 
 
 /**
- * normalizes url
- * @param {string} url in a form of 'address' or 'http://address' or 'https://address'
+ * Нормализируем URL
+ * @param {string} url в виде 'address' или 'http://address' или 'https://address'
  * @returns {string} 'https://address'
  */
 export function normalizeUrl(url){
@@ -23,7 +23,7 @@ export function normalizeUrl(url){
 
 
 /**
- * checks if str contains 'viagra' or 'XXX'
+ * проверяет, содержит ли строка 'viagra' или 'XXX'
  * @param {string} str 
  * @returns {boolean}
  */
@@ -34,7 +34,7 @@ export function checkSpam(str){
 
 
 /**
- * if str doesnt fit into max length cuts it off and puts … in the end
+ * если строка не помещается в макс длину, обрезаем ее и добавляем  … in the end
  * @param {string} str 
  * @param {number} maxlength 
  * @returns {string}
@@ -47,9 +47,9 @@ export function truncate(str, maxlength){
 
 
 /**
- * removes '-' symbol from the str and returns it as the standrt js func name
- * @param {string} str 'var-test-text'
- * @returns {string} 'varTestText'
+ * удаляет символ '-' из строки и возвращает ее в виде стандартного имени 
+ * @param {string} str 
+ * @returns {string} 
  */
 export function camelize(str){
     let words = str.split("-")
@@ -58,9 +58,9 @@ export function camelize(str){
     return newStr
 }
 /**
- * returns a list of first n fib numbers
+ * возвращает список из первых n чисел фибоначчи
  * @param {number} n 
- * @returns {bigint[]}
+ * @returns {bigint[]} - массив чисел фибоначчи
  */
 export function fibs(n){
     let l = []
@@ -69,11 +69,12 @@ export function fibs(n){
 }
 
 /**
- * sorts and reverses given array
+ * сортирует и переворачивает заданый массив 
  * @param {number[]} arr 
  * @returns {number[]}
  */
 export function arrReverseSorted(arr){
+    let l = arr.toSorted((a, b) => b-a)
     const arrForCopy = arr.slice();
     arrForCopy.sort((a, b) => b-a);
     return arrForCopy;
@@ -81,7 +82,7 @@ export function arrReverseSorted(arr){
 
 
 /**
- * removes duplicates from an array
+ * удаляет дубликаты из массива
  * @param {any[]} arr 
  * @returns {any[]}
  */
