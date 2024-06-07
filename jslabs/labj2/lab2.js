@@ -76,3 +76,18 @@ function sum(...args){
     for(let i of args) s+=i
     return s
 }
+/**
+* @param {object} obj объект, к которому нужно добавить свойство
+* @return Исходный объект с добавленным свойством "blackSpot"
+*/
+function addBlackSpot(obj) {
+    if (typeof obj !== 'object' || obj === null) {
+    throw new Error('obj должен быть объектом');
+    }
+    
+    if (!obj.hasOwnProperty(Symbol.for('blackSpot'))) {
+    obj[Symbol.for('blackSpot')] = true;
+    }
+    
+    return obj;
+    }
