@@ -18,7 +18,9 @@
         }
 
         function getSecondsToday() {
-            return (new Date() - new Date().setHours(0, 0, 0, 0));
+            const now = new Date();
+            const startOfDay = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+            return Math.floor((now - startOfDay) / 1000);
         }
 
         function formatDate(date) {
